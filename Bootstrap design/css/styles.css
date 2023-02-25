@@ -1,0 +1,287 @@
+:root {
+    --darck-color: #19283f;
+    --green-color: #33d1cc;
+    --red-color: #ff3350;
+    --yellow-color: #ffc400;
+    --section-color: #eff7fa;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* start navbar */
+
+.navbar {
+    background-color: var(--darck-color);
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+
+@media(max-width:991px) {
+    .navbar ul {
+        margin-top: 17px !important;
+        border-top: 1px solid white;
+    }
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-color);
+}
+
+.navbar .search {
+    border-left: 2px solid var(--green-color);
+}
+
+.navbar .search svg {
+    color: var(--green-color);
+}
+
+.navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler[area-expanded="true"] {
+    color: var(--green-color);
+}
+
+.main-btn {
+    color: var(--darck-color);
+    font-weight: bold;
+}
+
+
+/* End navbar */
+
+
+/* start landing */
+
+.landing {
+    background-color: var(--darck-color);
+    color: white;
+    min-height: calc(100vh - 72px);
+}
+
+
+/* End landing */
+
+
+/* start feautures */
+
+.features .icon-holder {
+    height: 200px;
+}
+
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.features .icon-holder .number {
+    font-size: 12rem;
+    color: var(--section-color);
+}
+
+.features .icon-holder .icon {
+    color: var(--green-color);
+}
+
+.features h4 {
+    color: var(--yellow-color);
+}
+
+
+/* End feautures */
+
+
+/* start our work */
+
+.work {
+    background-color: var(--section-color);
+}
+
+.work ul .active {
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+
+.work ul li {
+    padding: 0.5rem 1rem;
+    position: pointer;
+    font-weight: bold;
+}
+
+.work ul li:not(.active):hover {
+    color: var(--red-color);
+}
+
+.work .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.work .box::before {
+    content: attr(data-work);
+    background-color: rgb(51 209 204 / 76%);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: 0.3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 5px));
+}
+
+.work .box:hover::before {
+    transform: translateX(0);
+}
+
+
+/* End our work*/
+
+
+/* start stuff */
+
+.stuff .description {
+    max-width: 500px;
+}
+
+
+/* End stuff */
+
+
+/* start team section */
+
+.team {
+    background-color: var(--section-color);
+}
+
+.team h2 {
+    color: var(--yellow-color);
+}
+
+.team .box h4 {
+    background-color: var(--green-color);
+    color: white;
+    padding: 15px 0;
+}
+
+.team .box blockquote {
+    padding: 10px;
+}
+
+
+/* End team section*/
+
+
+/* start project */
+
+.project .content {
+    background-color: var(--darck-color);
+}
+
+
+/* End project */
+
+
+/* start  subscribe */
+
+.subs {
+    background-color: var(--yellow-color);
+}
+
+.subs input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+
+.subs input[type="text"]:focus {
+    outline: none;
+}
+
+.subs ::placeholder {
+    color: white;
+}
+
+.subs input[type="submit"] {
+    background-color: var(--darck-color);
+    color: var(--yellow-color);
+}
+
+
+/* End  subscribe */
+
+
+/* start footer */
+
+.footer {
+    background-color: var(--darck-color);
+}
+
+.footer .about li,
+.footer .inks li {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.footer span:first-of-type {
+    color: var(--green-color);
+    font-weight: bold;
+}
+
+.footer span:last-child {
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+
+.footer .social svg {
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer .social .face {
+    background-color: #1877f2;
+}
+
+.footer .social .youtube {
+    background-color: #ff0000;
+}
+
+.footer .social .linkedin {
+    background-color: #0077b5;
+}
+
+.footer .social .twitter {
+    background-color: #1da1f2;
+}
+
+
+/* End  footer */

@@ -1,0 +1,302 @@
+:root {
+    --blue-color: #0075ff;
+    --blue-color-alt: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --grey-color: #888;
+}
+
+
+/* ----------------------components-------------------------- */
+
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+
+
+/* --------------------flex options------------------------ */
+
+.flex-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+
+/* -----------------padding and margins--------------------------- */
+
+.p-0 {
+    padding: 0;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
+.pad-b-15 {
+    padding-bottom: 15px;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-25 {
+    margin-top: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.ml-20 {
+    margin-left: 20px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+
+/* -----------------background and colors--------------------------- */
+
+.bg-color-eee {
+    background-color: #eee;
+}
+
+.bg-color-white {
+    background-color: white;
+}
+
+.bg-color-blue {
+    background-color: var(--blue-color);
+}
+
+.bg-color-red {
+    background-color: red;
+}
+
+.bg-color-orange {
+    background-color: var(--orange-color);
+}
+
+.bg-color-green {
+    background-color: var(--green-color);
+}
+
+.color-black {
+    color: black;
+}
+
+.color-grey {
+    color: var(--grey-color);
+}
+
+.color-white {
+    color: white;
+}
+
+.orange-color {
+    color: var(--orange-color);
+}
+
+.red-color {
+    color: var(--red-color);
+}
+
+.green-color {
+    color: var(--green-color);
+}
+
+.blue-color {
+    color: var(--blue-color);
+}
+
+
+/* ------------------border and border-raduis-------------------------- */
+
+.rad-6 {
+    border-radius: 6px;
+}
+
+.rad-50-percent {
+    border-radius: 50%;
+}
+
+.rad-10 {
+    border-radius: 6px;
+}
+
+.br-none {
+    border: none;
+}
+
+.br-color-ccc {
+    border: 1px solid #ccc;
+}
+
+
+/* ----------------position options---------------------------- */
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+
+/* -----------------text and fonts--------------------------- */
+
+.text-c {
+    text-align: center;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+
+/* ----------------Momile display options----------------------- */
+
+@media(max-width:767px) {
+    .hide-mobile {
+        display: none;
+    }
+    .display-block-mobile {
+        display: block;
+    }
+    .text-center-mobile {
+        text-align: center;
+    }
+}
+
+
+/* --------------------width and height-------------------------------------- */
+
+.full-width {
+    width: 100%;
+}
+
+.fit-content {
+    width: fit-content;
+}
+
+
+/* ----------------------Dsplay-grid and gaps---------------------------------- */
+
+.display-grid {
+    display: grid;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+
+/* --------------------display elements options---------------------------------- */
+
+.display-block {
+    display: block;
+}
